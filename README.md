@@ -110,28 +110,27 @@ pip install -r requirements.txt
 
 ## ❤️ Acknowledgements
 
-This repo is mainly built on [DiT](https://github.com/facebookresearch/DiT), [FastDiT](https://github.com/chuanyangjin/fast-DiT) and [SiT](https://github.com/willisma/SiT). Our VAVAE codes are mainly built with [LDM](https://github.com/CompVis/latent-diffusion) and [MAR](https://github.com/LTH14/mar). Thanks for all these great works.
+This repo is mainly built on [ImagenTime](https://github.com/azencot-group/ImagenTime/tree/main). Thanks for the great work.
 
 ## 📝 Citation
 
 If you find our work useful, please cite our related paper:
 
 ```
-# CVPR 2025
-@inproceedings{yao2025vavae,
-  title={Reconstruction vs. generation: Taming optimization dilemma in latent diffusion models},
-  author={Yao, Jingfeng and Yang, Bin and Wang, Xinggang},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2025}
+# ICLR 2026
+@inproceedings{tewfunctional,
+  title={Functional MRI Time Series Generation via Wavelet-Based Image Transform and Spectral Flow Matching for Brain Disorder Identification},
+  author={Tew, Hwa Hui and Loo, Junn Yong and Yu, Leong Fang and Lau, Julia K and Fan, Ding and Ombao, Hernando and Phan, Raphael CW and Tan, Chee Pin and Ting, Chee-Ming},
+  booktitle={The Fourteenth International Conference on Learning Representations}
 }
 
-# NeurIPS 2024
-@article{yao2024fasterdit,
-  title={Fasterdit: Towards faster diffusion transformers training without architecture modification},
-  author={Yao, Jingfeng and Wang, Cheng and Liu, Wenyu and Wang, Xinggang},
-  journal={Advances in Neural Information Processing Systems},
-  volume={37},
-  pages={56166--56189},
-  year={2024}
+# MICCAI 2025
+@inproceedings{tew2025t2i,
+  title={T2I-Diff: fMRI Signal Generation via Time-Frequency Image Transform and Classifier-Free Denoising Diffusion Models},
+  author={Tew, Hwa Hui and Loo, Junn Yong and Tan, Yee-Fan and Tang, Xinyu and Ombao, Hernando and Noman, Fuad and Phan, Rapha{\"e}l C-W and Ting, Chee-Ming},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={640--650},
+  year={2025},
+  organization={Springer}
 }
 ```
