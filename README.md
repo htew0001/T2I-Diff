@@ -32,28 +32,15 @@
 
 ## 📰 News
 
-- **[2025.12.16]** **Check our new work [VTP](https://github.com/MiniMax-AI/VTP), a brand new scaling law of visual tokenziers!**
+- **[2026.01.26]** **Check our new work [DSFM](https://openreview.net/pdf?id=Dgphd9qizu) !**
 
-- **[2025.04.04]** VA-VAE has been selected as **Oral Presentation!** 
+- **[2025.05.18]** We have released the code and paper for T2I-Diff !
 
-- **[2025.02.27]** **VA-VAE has been accepted by CVPR 2025!** 🎉🎉🎉
+## 📄 Abstract
 
-- **[2025.02.25]** We have released [training codes of VA-VAE](vavae)!
+Functional Magnetic Resonance Imaging (fMRI) is an advanced neuroimaging method that enables in-depth analysis of brain activity by measuring dynamic changes in the blood oxygenation leveldependent (BOLD) signals. However, the resource-intensive nature of fMRI data acquisition limits the availability of high-fidelity samples required for data-driven brain analysis models. While modern generative models can synthesize fMRI data, they often underperform because they overlook the complex non-stationarity and nonlinear BOLD dynamics. 
 
-- **[2025.01.16]** More experimental tokenizer variants have been released! You could check them [here](https://huggingface.co/hustvl/va-vae-imagenet256-experimental-variants/tree/main).
-
-- **[2025.01.02]** We have released the pre-trained weights.
-
-- **[2025.01.01]** We have released the code and paper for VA-VAE and LightningDiT! The weights and pre-extracted latents will be released soon.
-
-## 📄 Introduction
-
-Latent diffusion models (LDMs) with Transformer architectures excel at generating high-fidelity images. However, recent studies reveal an **optimization dilemma** in this two-stage design: while increasing the per-token feature dimension in visual tokenizers improves reconstruction quality, it requires substantially larger diffusion models and more training iterations to achieve comparable generation performance.
-Consequently, existing systems often settle for sub-optimal solutions, either producing visual artifacts due to information loss within tokenizers or failing to converge fully due to expensive computation costs.
-
-We argue that this dilemma stems from the inherent difficulty in learning unconstrained high-dimensional latent spaces. To address this, we propose aligning the latent space with pre-trained vision foundation models when training the visual tokenizers. Our proposed VA-VAE (Vision foundation model Aligned Variational AutoEncoder) significantly expands the reconstruction-generation frontier of latent diffusion models, enabling faster convergence of Diffusion Transformers (DiT) in high-dimensional latent spaces.
-To exploit the full potential of VA-VAE, we build an enhanced DiT baseline with improved training strategies and architecture designs, termed LightningDiT.
-The integrated system demonstrates remarkable training efficiency by reaching FID=2.11 in just 64 epochs -- an over 21× convergence speedup over the original DiT implementations, while achieving state-of-the-art performance on ImageNet-256 image generation with FID=1.35.
+To address these challenges, we introduce T2I-Diff, an fMRI generation framework that leverages time-frequency representation of BOLD signals and classifier-free denoising diffusion. Specifically, our framework first converts BOLD signals into windowed spectrograms via a timedependent Fourier transform, capturing both the underlying temporal dynamics and spectral evolution. Subsequently, a classifier-free diffusion model is trained to generate class-conditioned frequency spectrograms, which are then reverted to BOLD signals via inverse Fourier transforms. Finally, we validate the efficacy of our approach by demonstrating improved accuracy and generalization in downstream fMRI-based brain network classification. 
 
 ## 📝 Results
 
