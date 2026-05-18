@@ -8,13 +8,8 @@
 
 ¹ ​School of Information Technology, Monash University Malaysia
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/reconstruction-vs-generation-taming-1/image-generation-on-imagenet-256x256)](https://paperswithcode.com/sota/image-generation-on-imagenet-256x256?p=reconstruction-vs-generation-taming-1)
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-VA_VAE-b31b1b.svg)]()
-[![arXiv](https://img.shields.io/badge/arXiv-FasterDiT-b31b1b.svg)](https://arxiv.org/abs/2410.10356) -->
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![authors](https://img.shields.io/badge/by-hustvl-green)](https://github.com/hustvl)
-[![paper](https://img.shields.io/badge/CVPR'25-VA_VAE-b31b1b.svg)](https://arxiv.org/abs/2501.01423)
-[![arXiv](https://img.shields.io/badge/NeurIPS'24-FasterDiT-b31b1b.svg)](https://arxiv.org/abs/2410.10356)
+[![paper](https://img.shields.io/badge/MICCAI'25-T2IDiff-b31b1b)](https://papers.miccai.org/miccai-2025/paper/3042_paper.pdf)
+[![arXiv](https://img.shields.io/badge/ICLR'26-DSFM-b31b1b)](https://openreview.net/pdf?id=Dgphd9qizu)
 
 
 </div>
