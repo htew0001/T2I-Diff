@@ -2,14 +2,11 @@
 
 <h2>T2I-Diff: fMRI Signal Generation via Time-Frequency Image Transform and Classifier-Free Denoising Diffusion Models</h2>
 
-**_FID=1.35 on ImageNet-256 & 21.8x faster training than DiT!_**
+**_The first framework to introduce a time-frequency image transform for fMRI BOLD signal generation and brain disorder classification!_**
 
-[Jingfeng Yao](https://github.com/JingfengYao)¹, [Bin Yang](https://www.cs.toronto.edu/~byang/)², [Xinggang Wang](https://xwcv.github.io/index.htm)¹*
+[Hwa Hui Tew](https://htew0001.github.io/)¹, [Junn Yong Loo](https://scholar.google.com/citations?user=PsL3CMYAAAAJ&hl=en)¹, [Chee-Ming Ting](https://scholar.google.com.my/citations?user=z_BmSq4AAAAJ&hl=en&authuser=1&oi=ao)¹*
 
-¹ ​Huazhong University of Science and Technology (HUST)  
-² ​Independent Researcher
-
-*Corresponding author: xgwang@hust.edu.cn
+¹ ​School of Information Technology, Monash University Malaysia
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/reconstruction-vs-generation-taming-1/image-generation-on-imagenet-256x256)](https://paperswithcode.com/sota/image-generation-on-imagenet-256x256?p=reconstruction-vs-generation-taming-1)
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-VA_VAE-b31b1b.svg)]()
@@ -18,8 +15,6 @@
 [![authors](https://img.shields.io/badge/by-hustvl-green)](https://github.com/hustvl)
 [![paper](https://img.shields.io/badge/CVPR'25-VA_VAE-b31b1b.svg)](https://arxiv.org/abs/2501.01423)
 [![arXiv](https://img.shields.io/badge/NeurIPS'24-FasterDiT-b31b1b.svg)](https://arxiv.org/abs/2410.10356)
-
-
 
 
 </div>
