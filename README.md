@@ -2,7 +2,7 @@
 
 <h2>T2I-Diff: fMRI Signal Generation via Time-Frequency Image Transform and Classifier-Free Denoising Diffusion Models</h2>
 
-**_The first framework to introduce a time-frequency image transform for fMRI BOLD signal generation and brain disorder classification!_**
+**_The first framework to introduce time-frequency image transform for fMRI BOLD signal generation and brain disorder classification!_**
 
 [Hwa Hui Tew](https://htew0001.github.io/)¹, [Junn Yong Loo](https://scholar.google.com/citations?user=PsL3CMYAAAAJ&hl=en)¹, [Chee-Ming Ting](https://scholar.google.com.my/citations?user=z_BmSq4AAAAJ&hl=en&authuser=1&oi=ao)¹*
 
