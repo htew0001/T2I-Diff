@@ -24,7 +24,7 @@
 
 ## 📰 News
 
-- **[2026.01.26]** **Check our new work [DSFM](https://openreview.net/pdf?id=Dgphd9qizu) !**
+- **[2026.01.26]** **Check our new work [DSFM](https://openreview.net/pdf?id=Dgphd9qizu), a new generative modeling framework for fMRI !**
 
 - **[2025.05.18]** We have released the code and paper for T2I-Diff !
 
