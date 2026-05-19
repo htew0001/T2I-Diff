@@ -15,6 +15,8 @@
 </div>
 <div align="center">
 <img src="Images/viz1.png" alt="Visualization">
+    
+**Figure 1:** Overview of our proposed T2I-Diff framework.
 </div>
 
 ## 📰 News
@@ -31,54 +33,50 @@ To address these challenges, we introduce T2I-Diff, an fMRI generation framework
 
 ## 🎯 How to Use
 
+### Datasets
+#### 1. NetSim 
+```
+https://www.fmrib.ox.ac.uk/datasets/netsim/index.html
+```
+#### 2. MDD 
+```
+https://rfmri.org/REST-meta-MDD
+```
+After preprocessing, place the processed data in the project’s empty `/data/<desired_dataset>` folder.
+
 ### Installation
-
+Download and set up the repository:
 ```
-conda create -n lightningdit python=3.10.12
-conda activate lightningdit
-pip install -r requirements.txt
+https://github.com/htew0001/T2I-Diff
+cd T2I-Diff
 ```
 
+We provide a [`requirements.yaml`](requirements.yaml) file to easily create a Conda environment configured to run the model:
+```
+conda env create -f requirements.yaml
+conda activate T2IDIFF
+```
 
-### Inference with Pre-trained Models
+### Usage
+We include three main scripts to perform different tasks:
+- **Conditional Generation**: [`run_training.py`](run_training.py) - Executes the training of conditional generative task for disease and healthy-control groups.
+- **Conditional Sampling**: [`run_conditional.py`](run_conditional.py) - Executes the sampling of conditional generative task for disease and healthy-control groups.
+- **Evaluation Metrics**: [`run_evaluation.py`](run_evaluation.py) - Executes the evaluation of various time-series metrics.
 
-- Download weights and data infos:
+**For Training of Conditional Generative Models:**
+```
+python run_training.py
+```
 
-    - Download pre-trained models
-        | Tokenizer | Generation Model | FID | FID cfg |
-        |:---------:|:----------------|:----:|:---:|
-        | [VA-VAE](https://huggingface.co/hustvl/vavae-imagenet256-f16d32-dinov2/blob/main/vavae-imagenet256-f16d32-dinov2.pt) | [LightningDiT-XL-800ep](https://huggingface.co/hustvl/lightningdit-xl-imagenet256-800ep/blob/main/lightningdit-xl-imagenet256-800ep.pt) | 2.17 | 1.35 |
-        |           | [LightningDiT-XL-64ep](https://huggingface.co/hustvl/lightningdit-xl-imagenet256-64ep/blob/main/lightningdit-xl-imagenet256-64ep.pt) | 5.14 | 2.11 |
+**For Sampling of Conditional Generative Models:**
+```
+python run_inference.py
+```
 
-    - Download [latent statistics](https://huggingface.co/hustvl/vavae-imagenet256-f16d32-dinov2/blob/main/latents_stats.pt). This file contains the channel-wise mean and standard deviation statistics.
-
-    - Modify config file in ``configs/reproductions`` as required. 
-
-- Fast sample demo images:
-
-    Run:
-    ```
-    bash bash run_fast_inference.sh ${config_path}
-    ```
-    Images will be saved into ``demo_images/demo_samples.png``, e.g. the following one:
-    <div align="center">
-    <img src="images/demo_samples.png" alt="Demo Samples" width="600">
-    </div>
-
-- Sample for FID-50k evaluation:
-    
-    Run:
-    ```
-    bash run_inference.sh ${config_path}
-    ```
-    NOTE: The FID result reported by the script serves as a reference value. The final FID-50k reported in paper is evaluated with ADM:
-
-    ```
-    git clone https://github.com/openai/guided-diffusion.git
-    
-    # save your npz file with tools/save_npz.py
-    bash run_fid_eval.sh /path/to/your.npz
-    ```
+**For Evaluation of Conditional Generative Models:**
+```
+python run_evaluation.py
+```
 
 ## ❤️ Acknowledgements
 
