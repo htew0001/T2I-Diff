@@ -1,0 +1,34 @@
+# training:
+epochs: 1001 #1000
+batch_size: 32
+learning_rate: 0.0003 #1e-4
+weight_decay: 0.00001 #1e-5
+# data:
+dataset: MDD
+datapath: "<your_path>"
+seq_len: 232 #232 timesteps
+outfold_num: 1
+infold_num: 1
+num_classes: 2
+# transform:
+use_stft: true
+n_fft: 62
+hop_length: 10 #10
+# model:
+img_resolution: 32 #32 (HH)
+input_channels: 232 
+unet_channels: 128
+ch_mult: [1,2,4]
+attn_resolution: [32]
+diffusion_steps: 18
+guidance_scale: 0.1
+ema: true
+ema_warmup: 100
+# logging:
+logging_iter: 100
+gen_folderpath: "<your_path>"
+# sampling:
+sampling:
+  class_counts:
+    0: 182
+    1: 199
