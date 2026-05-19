@@ -14,7 +14,7 @@
 
 </div>
 <div align="center">
-<img src="images/vis.png" alt="Visualization">
+<img src="Images/viz1.png" alt="Visualization">
 </div>
 
 ## 📰 News
