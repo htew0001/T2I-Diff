@@ -60,7 +60,7 @@ conda activate T2IDIFF
 ### Usage
 We include three main scripts to perform different tasks:
 - **Conditional Generation**: [`run_training.py`](run_training.py) - Executes the training of conditional generative task for disease and healthy-control groups.
-- **Conditional Sampling**: [`run_conditional.py`](run_conditional.py) - Executes the sampling of conditional generative task for disease and healthy-control groups.
+- **Conditional Sampling**: [`run_inference.py`](run_inference.py) - Executes the sampling of conditional generative task for disease and healthy-control groups.
 - **Evaluation Metrics**: [`run_evaluation.py`](run_evaluation.py) - Executes the evaluation of various time-series metrics.
 
 **For Training of Conditional Generative Models:**
