@@ -65,17 +65,17 @@ We include three main scripts to perform different tasks:
 
 **For Training of Conditional Generative Models:**
 ```
-python run_training.py
+python run_training.py --config ./configs/conditional/<desired_dataset>.yaml
 ```
 
 **For Sampling of Conditional Generative Models:**
 ```
-python run_inference.py
+python run_inference.py --config ./configs/conditional/<desired_dataset>.yaml
 ```
 
 **For Evaluation of Conditional Generative Models:**
 ```
-python run_evaluation.py
+python run_evaluation.py 
 ```
 
 ## ❤️ Acknowledgements
